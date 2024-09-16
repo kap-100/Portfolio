@@ -252,11 +252,11 @@ span {
      }
      41%,
      60% {
-          content: "Robotics Engineer";
+          content: "AI Research Scientist";
      }
      61%,
      80% {
-          content: "AI Research Scientist";
+          content: "Robotics Engineer";
      }
      81%,
      100% {
@@ -547,9 +547,6 @@ span {
 }
 
 /* ================= Contact =================*/
-.contact {
-     /* background-color: var(--second-bg-color); */
-}
 
 .contact h2 {
      margin-bottom: 3rem;
