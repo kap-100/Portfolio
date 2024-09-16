@@ -256,7 +256,7 @@ span {
      }
      61%,
      80% {
-          ontent: "AI Research Scientist";
+          content: "AI Research Scientist";
      }
      81%,
      100% {
@@ -408,6 +408,10 @@ span {
      display: grid;
 }
 
+.skills {
+     background-color: var(--second-bg-color);
+}
+
 .skills-container {
      grid-template-columns: repeat(2, 1fr);
      gap: 7rem;
@@ -441,9 +445,110 @@ span {
      background-color: var(--main-color);
 }
 
+/* ================= Projects =================*/
+
+.projects .heading {
+     margin-bottom: 0;
+}
+
+.projects-subtitle {
+     font-size: 2rem;
+     text-align: center;
+     width: 100%;
+     color: var(--main-color);
+}
+
+.projects-container {
+     margin-top: 5rem;
+     background: rgba(106, 141, 138, 0.199);
+     border-radius: 16px;
+     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+     backdrop-filter: blur(11.1px);
+     -webkit-backdrop-filter: blur(11.1px);
+     border: 1px solid rgba(106, 141, 138, 0.23);
+}
+
+.project-wrapper {
+     max-width: 1100px;
+     margin: 0 60px 35px;
+     padding: 20px 10px;
+     overflow: hidden;
+}
+
+.card-list .card-item {
+     list-style: none;
+}
+
+.card-list .card-item .card-link {
+     user-select: none;
+     display: block;
+     background: rgba(113, 114, 124, 0.142);
+     padding: 18px;
+     border-radius: 12px;
+     text-decoration: none;
+     border: 2px solid transparent;
+     /* box-shadow: 0px 10px 10px rgba(234, 225, 225, 0.447); */
+     box-shadow: 0 5px 5px var(--main-color);
+     transition: 0.2 ease;
+}
+
+.card-list .card-item .card-link:hover {
+     border-color: var(--main-color);
+}
+
+.card-list .card-link .card-img {
+     width: 100%;
+     aspect-ratio: 16 / 9;
+     border-radius: 10px;
+}
+
+.card-list .card-link .badge {
+     color: blanchedalmondk;
+     padding: 8px 16px;
+     font-size: 1.5rem;
+     font-weight: 500;
+     margin: 10px 0 10px;
+     width: fit-content;
+     background: var(--main-color);
+     border-radius: 50px;
+}
+
+.card-list .card-link .card-title {
+     font-size: 1.8rem;
+     color: #fff;
+     font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+     height: 35px;
+     width: 35px;
+     border-radius: 50%;
+     color: #00ffeece;
+     margin: 30px 0 5px;
+     cursor: pointer;
+     border: 2px solid var(--main-border);
+     transform: rotate(-45deg);
+     transition: 0.4 ease;
+     background-color: #ffffffe2;
+}
+
+.card-list .card-link:hover .card-button {
+     color: black;
+     background: var(--main-color);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+     color: var(--main-color);
+}
+
+.swiper-pagination-bullet {
+     background: var(--main-color);
+}
+
 /* ================= Contact =================*/
 .contact {
-     background-color: var(--second-bg-color);
+     /* background-color: var(--second-bg-color); */
 }
 
 .contact h2 {
@@ -524,7 +629,7 @@ span {
      bottom: 0;
      width: 100%;
      padding: 40px 0;
-     background-color: var(--bg-color);
+     background-color: var(--second-bg-color);
 }
 
 .footer .socials {
